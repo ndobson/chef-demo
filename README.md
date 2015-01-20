@@ -1,6 +1,6 @@
 # demo-cookbook
 
-TODO: Enter the cookbook description here.
+Trying out Drone.
 
 ## Supported Platforms
 
