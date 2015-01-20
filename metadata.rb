@@ -1,0 +1,7 @@
+name             'demo'
+maintainer       'Nick Dobson'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures chef-demo'
+long_description 'Installs/Configures chef-demo'
+version          '0.1.0'
