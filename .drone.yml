@@ -1,3 +1,3 @@
-image: ndobson/ruby:2.0.0
+image: ndobson/centos6-ruby:2.1.2
 script:
   - echo test
