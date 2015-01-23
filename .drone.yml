@@ -1,3 +1,12 @@
 image: ndobson/centos6-ruby:2.1.2
+cache:
+  - /root/.gem
 script:
-  - env
+  - export USE_SYSTEM_GECODE=1
+  - export GEM_HOME=/root/.gem
+  - bundle install
+  - bundle show foodcritic
+  - bundle exec knife cookbook test -o . -a
+  - bundle exec foodcritic -f correctness ./
+  - bundle exec rspec
+  - echo "If this is master, we next we release!!!!"
