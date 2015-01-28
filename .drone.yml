@@ -2,10 +2,4 @@ image: ndobson/centos6-ruby:2.0.0
 cache:
   - /root/.gem
 script:
-  - export USE_SYSTEM_GECODE=1
-  - export GEM_HOME=/root/.gem
-  - bundle install
-  - bundle exec knife cookbook test -o . -a
-  - bundle exec foodcritic -f correctness ./
-  - bundle exec rspec
-  - echo "If this is master, next we release!!!!"
+  - /usr/local/bin/pipeline.sh
