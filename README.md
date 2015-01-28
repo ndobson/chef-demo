@@ -4,7 +4,7 @@ Trying out Drone.
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+CentOS
 
 ## Attributes
 
