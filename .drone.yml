@@ -1,11 +1,10 @@
-image: ndobson/centos6-ruby:2.1.2
+image: ndobson/centos6-ruby:2.0.0
 cache:
   - /root/.gem
 script:
   - export USE_SYSTEM_GECODE=1
   - export GEM_HOME=/root/.gem
   - bundle install
-  - bundle show foodcritic
   - bundle exec knife cookbook test -o . -a
   - bundle exec foodcritic -f correctness ./
   - bundle exec rspec
