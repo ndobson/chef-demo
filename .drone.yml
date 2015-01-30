@@ -1,4 +1,4 @@
-image: ndobson/centos6-ruby:2.0.0
+image: ndobson/centos6-chefdk:0.3.6
 cache:
   - /root/.gem
 script:
